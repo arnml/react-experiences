@@ -1,0 +1,29 @@
+.splineContainer {
+    position: relative; /* Ensure the container is positioned relatively */
+    width: 100%;
+    height: 80vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.splineBackground {
+    position: absolute; /* Position the Spline component absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the Spline component is behind other content */
+}
+
+@media (max-width: 768px) {
+    .splineContainer {
+        height: 80vh; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .splineContainer {
+        height: 80vh; /* Further adjust for mobile devices */
+    }
+}
